@@ -7,7 +7,8 @@ Implemented functional: <br/>
 - Play pause <br/>
 - Prev next <br/>
 <br/>
-Need to do: <br/>
+Need to do: 
+<br/>
 1.	Random play <br/>
 2.	Removing playlists <br/>
 3.	Queuing for playback not after switching to the playlist, but after clicking on the play button <br/>
