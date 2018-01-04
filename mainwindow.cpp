@@ -212,8 +212,7 @@ void MainWindow::setVolumeSlider() {
         volumeSlider->setFocusPolicy(Qt::NoFocus);
         volumeSlider->show();
         volumeSliderStatus = true;
-    }
-    else {
+    } else {
         delete volumeSlider;
         volumeSliderStatus = false;
 

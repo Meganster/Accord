@@ -129,11 +129,7 @@ void MainController::FailedToAddTracks(QVector<Audio> failedTracks) {
 }
 
 void MainController::trackRemovingFailed(int position){
-    qDebug() << "Printing errors ";
-
-    QString message = "Не удалось удалить трек";
-    QMessageBox::warning(&mainWin, "Ошибка", message, QMessageBox::Ok);
-    qDebug() << "Printing errors: success";
+    mainWin.errorMessage("Не удалось удалить песню");
 }
 
 void MainController::playpause(bool playOrPause){
