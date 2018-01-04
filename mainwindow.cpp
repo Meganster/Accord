@@ -147,7 +147,7 @@ void MainWindow::errorMessage(QString textOfError) {
     showErrorMessage(textOfError);
 }
 
-void MainWindow::audioRemoveFromList(int position) {
+void MainWindow::removeAudioFromDisplay(int position) {
     ui->curAudioListWidget->model()->removeRow(position);
 }
 

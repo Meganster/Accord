@@ -53,15 +53,16 @@ int Application::run(int argc, char *argv[]) {
                      &Player::instance(), SLOT(addTracks(QVector<Audio>)));
     //
 
-
+    // Блок по удалению песен
     QObject::connect(&mainController.getMainWin(), SIGNAL(removeAudio()),
                      &Player::instance(), SLOT(removeTrack()));
 
     QObject::connect(&Player::instance(), SIGNAL(removedTrackSuccessfully(int)),
-                     &mainController.getMainWin(), SLOT(audioRemoveFromList(int)));
+                     &mainController, SLOT(removeTrack(int)));
 
     QObject::connect(&Player::instance(), SIGNAL(removedTrackFailed(int)),
                      &mainController, SLOT(trackRemovingFailed(int)));
+    //
 
     QObject::connect(&mainController.getMainWin(), SIGNAL(play(bool)),
                      &Player::instance(), SLOT(play(bool)));

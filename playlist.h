@@ -22,7 +22,7 @@ public:
     QString get(int index);
 
     void addTracks(QVector<Audio> tracksToAdd);
-
+    bool removeAudio(int position);
     void setNamePlaylist(QString nameForPlaylist);
     bool Save( protobuf::Playlists& playlistsForSaving );
 

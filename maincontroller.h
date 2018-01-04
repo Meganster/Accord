@@ -27,6 +27,7 @@ public slots:
     void CreatePlaylist();
     void playlistSelected(int);
     void printPlaylists();
+    void removeTrack(int);
 
 signals:
     void play();

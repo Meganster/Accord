@@ -29,6 +29,14 @@ void MainController::openMainWin(){
     mainWin.show();
 }
 
+void MainController::removeTrack(int position) {
+    if( !Playlists::instance()[currentPosition].removeAudio(position) ) {
+        mainWin.errorMessage("Не удалось удалить песню");
+    } else {
+        mainWin.removeAudioFromDisplay(position);
+    }
+}
+
 void MainController::start(){
     openMainWin();
 }

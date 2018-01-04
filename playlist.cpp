@@ -47,6 +47,15 @@ void Playlist::addTracks(QVector<Audio> tracksToAdd) {
     tracks.append(tracksToAdd);
 }
 
+bool Playlist::removeAudio(int position) {
+    if( 0 <= position && position < tracks.size() ){
+        tracks.remove(position);
+        return true;
+    }
+
+    return false;
+}
+
 // функция, необходимая для работы
 // проверки корректной загрузки данных из protobuf
 QString Playlist::get(int index) {

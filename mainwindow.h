@@ -35,12 +35,13 @@ public:
     void showErrorMessage(QString textOfError);
     bool getLineOfText(const QString title, const QString message, QString& result);
 
+    void removeAudioFromDisplay(int);
+
 public slots:
     void sliderPositionChanged(qint64);
     void curAudioDurationChanged(qint64);
     void itemIndexChanged(int);
     void errorMessage(QString);
-    void audioRemoveFromList(int);
 
 private slots:
     void ShowContextMenu(const QPoint&);
