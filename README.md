@@ -13,3 +13,4 @@ Need to do: <br/>
 3. Queuing for playback not after switching to the playlist, but after clicking on the play button <br/>
 4. Incorrectly working constant pressing on prev/next <br/>
 5. Redo the interface <br/>
+ <br/>
