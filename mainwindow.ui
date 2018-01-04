@@ -220,33 +220,6 @@
        </layout>
       </item>
       <item>
-       <widget class="QSlider" name="timeSlider">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <family>Ubuntu</family>
-          <weight>50</weight>
-          <italic>true</italic>
-          <bold>false</bold>
-          <strikeout>false</strikeout>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#timeSlider {
-	padding-top: -4px;
-}</string>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QGroupBox" name="volumeMainBox">
@@ -688,7 +661,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>39</height>
     </rect>
    </property>
   </widget>

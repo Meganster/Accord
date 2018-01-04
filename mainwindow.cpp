@@ -193,12 +193,14 @@ void MainWindow::itemIndexChanged(int newRow){
 
 void MainWindow::curAudioDurationChanged(qint64 newDuration){
     curAudioDuration = newDuration;
-    ui->timeSlider->setMaximum(newDuration);
+    // Delete time slider
+    //ui->timeSlider->setMaximum(newDuration);
 }
 
 void MainWindow::sliderPositionChanged(qint64 position){
     if (curAudioDuration != 0){
-        ui->timeSlider->setSliderPosition(position);
+        // Unable slider
+        //ui->timeSlider->setSliderPosition(position);
         std::cout << "Slider position changed" << std::endl;
     }
 }
