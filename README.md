@@ -1,2 +1,2 @@
 # Accord
-Автор интерфейса: [msamokhina](https://github.com/msamokhina)
+Interface Author: [msamokhina](https://github.com/msamokhina)
